@@ -9,6 +9,7 @@ module.exports = {
 };
 
 async function insert(hobbit) {
+  return db('hobbits').insert(hobbit, 'id');
   return null;
 }
 
